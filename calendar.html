@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name="viewport" content='width=device-width, initial-scale=1'/>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='fullcalendar/lib/main.css'>
+		<link rel='stylesheet' href='calendar.css'>
+	</head>
+	<body>
+		<div id="modal_window" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="modal_event_title"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="yesButton">Yes</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='select'>You can filter by tags here:
+			<select id="tags_selector">
+				<option value="all">Select your tags</option>
+				<option value="tag1">tag1</option>
+				<option value="tag2">tag2</option>
+				<option value="tag3">tag3</option>
+				<option value="tag4">tag4</option>
+			</select>
+		</div>
+		<div id='calendar'></div>
+		<div id='selected'>
+			<b>You have selected</b><br>
+			<b>Title: </b><p id='title'></p><br>
+			<b>Date/Time: </b><p id='date'></p><br>
+			<b>Description: </b><p id='description'></p><br>
+			<b>Tags: </b><p id='tags'></p><br>
+		</div>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+		<script src='fullcalendar/lib/main.js'></script>
+		<script src='calendar.js'></script>
+	</body>
+</html>
